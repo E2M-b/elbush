@@ -1,0 +1,18 @@
+#include<stdio.h>
+main()
+{float gread;char name[40];char*r;
+gets(name);
+scanf("%f%c",&gread,&name);
+if(gread<50&&gread>-1)
+r="fail";
+else if(gread>49&&gread<65)
+r="pass";
+else if(gread>64&&gread<75)
+r="good";
+else if(gread>74&&gread<85)
+r="v.good";
+else if(gread>84&&gread<101)
+r="exellent";
+else r="error";
+printf("name=%s r=%s gread=%f",name,r,gread);
+}
